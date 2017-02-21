@@ -1,6 +1,5 @@
 require "jnum_to_anum/version"
 class String
-  # Your code goes here...
   def kansuji_to_num
     s = self.tr('一二三四五六七八九〇壱弐参０-９ａ-ｚＡ-Ｚ','12345678901230-9a-zA-Z').gsub(/[,.]+/,"")
     exception = s.match(/^([0-9]+)(百万|千)\z/)
